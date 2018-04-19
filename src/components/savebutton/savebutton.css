@@ -1,0 +1,80 @@
+.Button-Wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Playlist-save {
+  cursor: pointer;
+  width: 8rem;
+  padding: .77rem;
+  border-radius: 54px;
+  margin-top: 1.27rem;
+  background-color: #6c41ec;
+  text-align: center;
+  font-size: .83rem;
+  transition: background-color .25s;
+}
+
+.Playlist-save:hover {
+  background-color: rgba(108, 65, 233, .7);
+}
+
+.Playlist-save-unactive {
+  cursor: default;
+  width: 8rem;
+  padding: .77rem;
+  border-radius: 54px;
+  margin-top: 1.27rem;
+  background-color: rgba(108, 65, 233, .3);
+  text-align: center;
+  font-size: .83rem;
+  transition: background-color .25s;
+}
+
+.Warning-Closed{
+    background-color:  rgba(108, 65, 233, 1);
+    padding: 0rem;
+    margin-top: 0.5rem;
+    height: 0rem;
+    overflow-y: hidden;
+}
+
+.Warning-Open1{
+  background-color:  rgba(108, 65, 233, 1);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  height: 1rem;
+  transition: height 0.75s;
+  overflow-y: hidden;
+}
+
+.Warning-Open2{
+  background-color:  rgba(108, 65, 233, 1);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  height: 3rem;
+  transition: height 0.75s;
+  -webkit-transition: height 0.75s;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 480px){
+  .Warning-Open1{
+    height: 2rem;
+  }
+
+  .Warning-Open2{
+    height: 5rem;
+  }
+
+}
+
+
+.Show-Name-Warning{
+  margin-bottom: 1rem;
+}
+
+.Hidden{
+  display: none;
+}
